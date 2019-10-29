@@ -44,12 +44,12 @@ public class GettingStartedWithService {
         driver.get("http://www.google.by");
         sleep(5000);  // Let the user actually see something!
         WebElement searchBox = driver.findElement(By.name("q"));
-        searchBox.sendKeys("ChromeDriver");
+        searchBox.sendKeys("Docker");
         searchBox.submit();
         sleep(5000);
     }
 
-    @Test
+
     public void testTutBy() {
         driver.get("http://www.tut.by");
     }
