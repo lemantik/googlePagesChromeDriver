@@ -7,7 +7,7 @@ pipeline {
                 echo 'Building..'
                 script {
                     try {
-                        sh './gradlew test
+                        sh './gradlew test' //run a gradle task
                 }
             }
         }
