@@ -3,7 +3,10 @@ pipeline {
 
     stages {
         stage('Test SuiteCreateUsers') {
+            steps {
+                echo 'Building..'
                 bat(".\\gradlew.bat -s clean test")
+            }
         }
     }
 }
