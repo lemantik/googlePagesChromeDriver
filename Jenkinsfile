@@ -8,6 +8,7 @@ pipeline {
                 script {
                     try {
                         sh './gradlew test' //run a gradle task
+                    }
                 }
             }
         }
