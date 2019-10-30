@@ -8,10 +8,10 @@ public class GettingStarted {
     public void testGoogleSearch() throws InterruptedException {
         // Optional. If not specified, WebDriver searches the PATH for chromedriver.
         System.setProperty("webdriver.chrome.driver", "./chromedriver");
-
+        System.setProperty("webdriver.chrome.logfile", "./chromeDriver.log");
         ChromeOptions options = new ChromeOptions();
 
-        options.addArguments("headless");
+        //options.addArguments("headless");
         options.addArguments("window-size=1280x800");
         options.addArguments("no-sandbox");
         options.addArguments("–disable-dev-shm-usage");
