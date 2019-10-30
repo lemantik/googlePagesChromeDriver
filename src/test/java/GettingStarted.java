@@ -4,6 +4,7 @@ import org.junit.Test;
 
 public class GettingStarted {
 
+    @Test
     public void testGoogleSearch() throws InterruptedException {
         // Optional. If not specified, WebDriver searches the PATH for chromedriver.
         System.setProperty("webdriver.chrome.driver", "./chromedriver");

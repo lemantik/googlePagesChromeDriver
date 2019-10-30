@@ -12,7 +12,7 @@ public class GettingStartedWithService {
     private static ChromeDriverService service;
     private WebDriver driver;
 
-    @BeforeClass
+    //@BeforeClass
     public static void createAndStartService() throws IOException {
         service = new ChromeDriverService.Builder()
                 .usingDriverExecutable(new File("./chromedriver"))
@@ -21,12 +21,12 @@ public class GettingStartedWithService {
         service.start();
     }
 
-    @AfterClass
+    //@AfterClass
     public static void stopService() {
         service.stop();
     }
 
-    @Before
+    //@Before
     public void createDriver() {
         ChromeOptions options = new ChromeOptions();
         DesiredCapabilities cap = new DesiredCapabilities();
@@ -34,12 +34,12 @@ public class GettingStartedWithService {
         driver = new RemoteWebDriver(service.getUrl(), cap);
     }
 
-    @After
+    //@After
     public void quitDriver() {
         driver.quit();
     }
 
-    @Test
+    //@Test
     public void testGoogleSearch() throws InterruptedException {
         driver.get("http://www.google.by");
         sleep(5000);  // Let the user actually see something!
